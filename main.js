@@ -17,7 +17,7 @@ books.push({id:2, name:"Knoeien met data-distributie", rating:3});
 
 // opvangen van een GET op /books. 
 app.get("/books", function(request, response){
-  //stuurt als antwoord de inhoud van onze database. Standaard in json terug gestuurd.
+  //stuurt als antwoord de inhoud van onze database. Standaad in json terug gestuurd.
   response.send(books);
 });
 
