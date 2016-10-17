@@ -1,0 +1,8 @@
+{
+    "name": "Rest_Calc_Robrecht_sneyers",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "Robrecht-pc",
+    "contributors": [],
+    "dependencies": {}
+}
