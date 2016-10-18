@@ -12,9 +12,25 @@ REST API --> omschrijving en gebruik welke resources.
 | maal          | integer       |
 | deling        | integer       |
 ***
+**POST**    
+      
+
 **Uitvoeren van een optelling**    
-`URL:http://localhost:4567/calculation/optelling/<optetellen getal>`      
-Voorbeeld:http://localhost:4567/calculation/optelling/6 *calculation=0 dus 0 +6 =6 *     
+     
+`URL: POST http://localhost:4567/calculation/optelling/<optetellen getal>`      
+Voorbeeld: POST http://localhost:4567/calculation/optelling/6 _calculation=0 dus 0 +6 =6_    
+   
+**Uitvoeren van een vermenigvuldiging**    
+`URL: POST http://localhost:4567/calculation/maal/<getal>`   
+Voorbeeld: POST http://localhost:4567/calculation/maal/6 _calculation*6_    
+     
+**Uitvoeren van een deling**    
+`URL: POST http://localhost:4567/calculation/deling/<getal>`    
+Voorbeeld: POST http://localhost:4567/calculation/deling/6 _calculation/6_    
+     
+  
+     
+
 
 
 
