@@ -13,3 +13,5 @@ voor het verwijderen gebruiken we DELETE om calculation terug te verwijderen en 
 
 Verder kan je dan ook breuk,maal,vierkantswortel, ...enz toevoegen als resources.
 
+Ik geloof dat dit REST is omwillen van het feit dat elk getal eigenlijk wordt opgeslagen en de berekening via de URL gebeuren.
+

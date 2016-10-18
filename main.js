@@ -22,14 +22,16 @@ app.get("/calculation", function(request, response){
 });
 
 // opvangen van een POST op /books. 
-app.post("/books", function(request, response){
+app.post("/calculation/optelling/:getal", function(request, response){
   // de data in de body wordt toegekend aan onze book variabele. 
   // deze is enkel opgevuld indien het JSON is.
-  var book= request.body;
+  //var book= request.body;
+  var input = request.params.getal;
+  console.dir(input);
   // een id geven aan ons nieuw boek.
-  book.id= books.length+1;
+  //book.id= books.length+1;
   // het boek toevoege in onze 'datastore'.
-  books.push(book);
+  //books.push(book);
   // de default httpstatus (200) overschrijven met 204 en geen antwoord specifiëren.
   response.status(204).send();
 });
