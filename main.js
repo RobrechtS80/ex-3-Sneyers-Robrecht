@@ -11,14 +11,14 @@ var app = express();
 app.use(busteVerwerker.json());
 
 // onze lokale 'datastore'. deze variable bewaart onze state. We zetten er ook wat data in
-var books = [];
-books.push({id:1, name:"Beginning Node JS", rating:4});
-books.push({id:2, name:"Knoeien met data-distributie", rating:3});
+var start = 0;
+//books.push({id:1, name:"Beginning Node JS", rating:4});
+//books.push({id:2, name:"Knoeien met data-distributie", rating:3});
 
 // opvangen van een GET op /books. 
-app.get("/books", function(request, response){
+app.get("/calculation", function(request, response){
   //stuurt als antwoord de inhoud van onze database. Standaad in json terug gestuurd.
-  response.send(books);
+  response.send(String(start)); //maak er een string van anders invalid statuscode
 });
 
 // opvangen van een POST op /books. 
