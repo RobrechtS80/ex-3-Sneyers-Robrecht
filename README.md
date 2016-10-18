@@ -1,8 +1,10 @@
 ## ex-3-Sneyers-Robrecht 3 INF
 
-REST API --> omschrijving en gebruik welke resources. 
+### REST API --> omschrijving en uitleg resources.    
+***
+     
 
-`**calculation**`    
+**calculation**    
 `toont het antwoord standaard op 0`          
 `URL: http://localhost:4567/calculation`
 
@@ -49,6 +51,9 @@ Voorbeeld: POST http://localhost:4567/calculation/deling/6 _calculation/6_
     
 **TO DO**
    
+een andere resource maken voor het standaard getal in te geven ipv van constant optelling te gebruiken om een getal bij 0 op te tellen.    
+Een delete die enkel de vorige stap verwijderd ?    
+    
 **NOTES**    
     
 Ik geloof dat dit REST is omwillen van het feit dat elk getal eigenlijk wordt opgeslagen en de berekening via de URL gebeuren.    
