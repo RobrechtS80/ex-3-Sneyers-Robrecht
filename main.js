@@ -10,36 +10,32 @@ var app = express();
 // automatische json-body parsers van request MET media-type application/json gespecifieerd in de request.
 app.use(busteVerwerker.json());
 
-// onze lokale 'datastore'. deze variable bewaart onze state. We zetten er ook wat data in
-var start = 0;
-//books.push({id:1, name:"Beginning Node JS", rating:4});
-//books.push({id:2, name:"Knoeien met data-distributie", rating:3});
 
-// opvangen van een GET op /books. 
+var start = 0;
+
 app.get("/calculation", function(request, response){
-  //stuurt als antwoord de inhoud van onze database. Standaad in json terug gestuurd.
-  response.send(String(start)); //maak er een string van anders invalid statuscode
+ 
+  response.send(String(start)); 
 });
 
 // opvangen van een POST op /books. 
 app.post("/calculation/optelling/:getal", function(request, response){
-  // de data in de body wordt toegekend aan onze book variabele. 
-  // deze is enkel opgevuld indien het JSON is.
-  //var book= request.body;
+
   var input = request.params.getal;
   console.dir(input);
   var solution = parseInt(start)+parseInt(input);
   response.send(String(solution));
   start = solution;
-  // een id geven aan ons nieuw boek.
-  //book.id= books.length+1;
-  // het boek toevoege in onze 'datastore'.
-  //books.push(book);
-  // de default httpstatus (200) overschrijven met 204 en geen antwoord specifiëren.
+  
   response.status(204).send();
 });
 
-// de server starten op poort 4567 (bereikbaar op http://localhost:4567 )
+app.delete('/calculation', function (request, response) {
+    start = 0;
+  response.send('DELETE request to homepage');
+});
+
+
 app.listen(4567);
 // lijntje voor te zien dat alles is opgestart.
 console.log("Server started");/* 
