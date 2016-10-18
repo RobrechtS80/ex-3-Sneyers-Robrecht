@@ -5,6 +5,11 @@
  http://stackoverflow.com/questions/8275209/how-can-i-create-a-restful-calculator
 # REST API --> omschrijving en gebruik welke resources. 
 #
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 Voorbeeld URL dat ik wil bereiken: /calculation/optelling/Var1 --> calculation staat standaard op 0 dus stel dat we uitvoeren /calculation/optelling/3 dan krijgen we 0+3
 nu staat calculation op 3 en kunnen we bijvoorbeeld /calculation/optelling/6 dan 3+6 is 9
 hiervoor gebruiken we een POST 
