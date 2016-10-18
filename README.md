@@ -1,20 +1,20 @@
 ## ex-3-Sneyers-Robrecht 3 INF
 
-1.  REST API --> omschrijving en gebruik welke resources. 
+REST API --> omschrijving en gebruik welke resources. 
 
-`calculation`
-**toont het antwoord standaard op 0**
+`calculation`    
+**toont het antwoord standaard op 0**       
 `URL: http://localhost:4567/calculation`
-***
+
 | Field         | Type          |
 | ------------- |:-------------:|
 | optelling     | integer       |
 | maal          | integer       |
 | deling        | integer       |
 ***
-**Uitvoeren van een optelling**
-`URL:http://localhost:4567/calculation/optelling/<optetellen getal>`
-_Voorbeeld:http://localhost:4567/calculation/optelling/6 **calculation=0 dus 0 +6 =6 ** _
+**Uitvoeren van een optelling**    
+`URL:http://localhost:4567/calculation/optelling/<optetellen getal>`      
+Voorbeeld:http://localhost:4567/calculation/optelling/6 *calculation=0 dus 0 +6 =6 *     
 
 
 
