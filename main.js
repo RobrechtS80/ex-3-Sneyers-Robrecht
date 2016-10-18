@@ -18,18 +18,30 @@ app.get("/calculation", function(request, response){
   response.send(String(start)); 
 });
 
-// opvangen van een POST op /books. 
+// eerste berekening optellen 
 app.post("/calculation/optelling/:getal", function(request, response){
 
   var input = request.params.getal;
   console.dir(input);
-  var solution = parseInt(start)+parseInt(input);
+  var solution = parseInt(start)+parseInt(input);//plus
   response.send(String(solution));
   start = solution;
   
-  response.status(204).send();
+  response.status(204).send();// RFC shit
+});
+// 2de berekening Vermenigvuldigen
+app.post("/calculation/maal/:getal", function(request, response){
+
+  var M_input = request.params.getal;
+  console.dir(M_input);
+  var M_solution = parseInt(start)*parseInt(M_input);//maal
+  response.send(String(M_solution));
+  start = M_solution;
+  
+  //response.status(204).send();// RFC shit
 });
 
+//delete alles wat je gedaan hebt. gans de calculatie
 app.delete('/calculation', function (request, response) {
     start = 0;
   response.send('DELETE request to homepage');

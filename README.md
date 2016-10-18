@@ -5,7 +5,7 @@
  http://stackoverflow.com/questions/8275209/how-can-i-create-a-restful-calculator
 # REST API --> omschrijving en gebruik welke resources. 
 #
-#Voorbeeld URL dat ik wil bereiken: /calculation/optelling/Var1 --> calculation staat standaard op 0 dus stel dat we uitvoeren /calculation/optelling/3 dan krijgen we 0+3
+Voorbeeld URL dat ik wil bereiken: /calculation/optelling/Var1 --> calculation staat standaard op 0 dus stel dat we uitvoeren /calculation/optelling/3 dan krijgen we 0+3
 nu staat calculation op 3 en kunnen we bijvoorbeeld /calculation/optelling/6 dan 3+6 is 9
 hiervoor gebruiken we een POST 
 voor het krijgen van de current waarde van calculation gebruiken we een GET
