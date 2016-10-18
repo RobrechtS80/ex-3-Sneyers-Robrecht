@@ -28,7 +28,7 @@ app.post("/calculation/optelling/:getal", function(request, response){
   //var book= request.body;
   var input = request.params.getal;
   console.dir(input);
-  var solution = start+input;
+  var solution = parseInt(start)+parseInt(input);
   response.send(String(solution));
   // een id geven aan ons nieuw boek.
   //book.id= books.length+1;
