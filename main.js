@@ -22,7 +22,7 @@ app.get("/calculation", function(request, response){
 app.post("/calculation/optelling/:getal", function(request, response){
 
   var input = request.params.getal;
-  console.dir(input);
+  console.dir(input);// gwn een check
   var solution = parseInt(start)+parseInt(input);//plus
   response.send(String(solution));
   start = solution;
@@ -33,10 +33,21 @@ app.post("/calculation/optelling/:getal", function(request, response){
 app.post("/calculation/maal/:getal", function(request, response){
 
   var M_input = request.params.getal;
-  console.dir(M_input);
+  console.dir(M_input);// gwn een check
   var M_solution = parseInt(start)*parseInt(M_input);//maal
   response.send(String(M_solution));
   start = M_solution;
+  
+  //response.status(204).send();// RFC shit
+});
+//3 de berekening --> delen
+app.post("/calculation/deling/:getal", function(request, response){
+
+  var D_input = request.params.getal;
+  console.dir(D_input); // gwn een check
+  var D_solution = parseInt(start)/parseInt(D_input);//maal
+  response.send(String(D_solution));
+  start = D_solution;
   
   //response.status(204).send();// RFC shit
 });
