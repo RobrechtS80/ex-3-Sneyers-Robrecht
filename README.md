@@ -3,13 +3,19 @@
 1.  REST API --> omschrijving en gebruik welke resources. 
 
 `calculation`
+**toont het antwoord standaard op 0**
+`URL: http://localhost:4567/calculation`
 ***
 | Field         | Type          |
 | ------------- |:-------------:|
 | optelling     | integer       |
 | maal          | integer       |
 | deling        | integer       |
-`URL: http://localhost:4567/calculation`
+***
+**Uitvoeren van een optelling**
+`URL:http://localhost:4567/calculation/optelling/<optetellen getal>`
+_Voorbeeld:http://localhost:4567/calculation/optelling/6 **calculation=0 dus 0 +6 =6 ** _
+
 
 
 Voorbeeld URL dat ik wil bereiken: /calculation/optelling/Var1 --> calculation staat standaard op 0 dus stel dat we uitvoeren /calculation/optelling/3 dan krijgen we 0+3
