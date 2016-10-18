@@ -20,24 +20,24 @@
 **Uitvoeren van een optelling**    
      
 `URL: POST http://localhost:4567/calculation/optelling/<optetellen getal>`      
-Voorbeeld: POST http://localhost:4567/calculation/optelling/6 _calculation=0 dus 0 +6 =6_    
+Voorbeeld: POST http://localhost:4567/calculation/optelling/6   _calculation=0 dus 0 +6 =6_    
    
 **Uitvoeren van een vermenigvuldiging**    
       
 `URL: POST http://localhost:4567/calculation/maal/<getal>`   
-Voorbeeld: POST http://localhost:4567/calculation/maal/6 _calculation*6_    
+Voorbeeld: POST http://localhost:4567/calculation/maal/6   _calculation*6_    
      
 **Uitvoeren van een deling**    
        
 `URL: POST http://localhost:4567/calculation/deling/<getal>`    
-Voorbeeld: POST http://localhost:4567/calculation/deling/6 _calculation/6_    
+Voorbeeld: POST http://localhost:4567/calculation/deling/6   _calculation/6_    
     
 ***    
 **GET**     
      
 **Het tonen van het resultaat**
      
-`URL: GET http://localhost:4567/calculation/URL:`      
+`URL: GET http://localhost:4567/calculation/`      
     
 ***
       
