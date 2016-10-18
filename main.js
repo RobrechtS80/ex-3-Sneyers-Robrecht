@@ -30,6 +30,7 @@ app.post("/calculation/optelling/:getal", function(request, response){
   console.dir(input);
   var solution = parseInt(start)+parseInt(input);
   response.send(String(solution));
+  start = solution;
   // een id geven aan ons nieuw boek.
   //book.id= books.length+1;
   // het boek toevoege in onze 'datastore'.
