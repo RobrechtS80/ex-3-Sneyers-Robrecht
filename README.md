@@ -4,4 +4,12 @@
 # andere links: http://apigee.com/about/blog/technology/restful-api-design-nouns-are-good-verbs-are-bad
 # http://stackoverflow.com/questions/8275209/how-can-i-create-a-restful-calculator
 # 
+#
+# Voorbeeld URL dat ik wil bereiken: /calculation/optelling/Var1 --> calculation staat standaard op 0 dus stel dat we uitvoeren /calculation/optelling/3 dan krijgen we 0+3
+nu staat calculation op 3 en kunnen we bijvoorbeeld /calculation/optelling/6 dan 3+6 is 9
+hiervoor gebruiken we een POST 
+voor het krijgen van de current waarde van calculation gebruiken we een GET
+voor het verwijderen gebruiken we DELETE om calculation terug te verwijderen en op 0 te zetten.
+
+Verder kan je dan ook breuk,maal,vierkantswortel, ...enz toevoegen als resources.
 
